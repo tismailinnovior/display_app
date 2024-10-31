@@ -9,7 +9,7 @@ from ucimlrepo import fetch_ucirepo
 from config import load_config
 from connect import connect
 
-db_uri = 'postgresql+psycopg2://PostgresAdmin:Team4Password@t4-postgres.postgres.database.azure.com/adventuredb'
+db_uri = 'postgresql+psycopg2://user:password-postgres.postgres.database.azure.com/dbname'
 #upload data to DB
 iris = fetch_ucirepo(name="Iris")
 iris_df = iris.data.original
